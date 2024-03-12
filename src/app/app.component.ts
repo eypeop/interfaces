@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'my-app';
-}
+  counter = 1; // <==
+  increment() {
+    this.counter++;
+  }
+
+  decrement() {
+    this.counter--;
+
+}}
