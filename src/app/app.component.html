@@ -1,14 +1,5 @@
 
-<div class="container">
-  <h1>{{ 1 + 1 }}</h1>
+  <div>
+    <app-greet></app-greet>
 </div>
-<div class="container">
 
-  <button (click)="decrement()" class="decrement">-</button>
-  <button (click)="increment()" class="increment">+</button>
-  
-</div>
-<div [class]="counter >= 0 ? 'green' : 'red'">
-  <h1>{{ counter }}</h1>
-  {{ counter >= 0 ? 'POSITIVE' : 'NEGATIVE' }}
-  
