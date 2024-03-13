@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { GreetComponent } from './greet/greet.component';
 
-export class AppComponent {
-  title = 'my-app';}
-export class GreetComponent {
-  title = 'my-app';}
-  
+
+ 
+@Component({
+    selector: "my-app",
+    standalone: true,
+    imports: [ RouterOutlet, GreetComponent],
+    template:'./app.component',
+})
+export class AppComponent {}
