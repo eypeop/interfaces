@@ -1,21 +1,26 @@
-<p>Student works!</p>
 <table>
-    <tr>
-        <td>Name</td>
-        <td>{{name}}</td>
-    </tr>
-<tr>
-        <td>Age</td>
-        <td>{{age}}</td>
-    </tr>
-    <tr>
-        <td>Mobile</td>
-        <td>{{mobile}}</td>
-    </tr>
-
-    <tr>
-        <td>Department</td>
-        <td>{{department}}</td>
-    </tr>
-        
-</table>
+    <thead>
+      <tr style="color: #369;">
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Branch</th>
+        <th>DOB</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students" [ngStyle]="{ 'background-color': student.Gender === 'Male' ? 'red' : 'green' }">
+        <td>{{ student.ID }}</td>
+        <td>{{ student.FirstName }}</td>
+        <td>{{ student.LastName }}</td>
+        <td>{{ student.Branch }}</td>
+        <td>{{ student.DOB }}</td>
+        <td>{{ student.Gender }}</td>
+      </tr>
+      <tr *ngIf="!students || students.length === 0">
+        <td colspan="6" style="color: white;">No Students to display</td>
+      </tr>
+    </tbody>
+  </table>
+  
