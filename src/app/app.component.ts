@@ -5,10 +5,10 @@ import { GreetComponent } from './greet/greet.component';
 
  
 @Component({
-    selector: "my-app",
-    standalone: true,
-    imports: [ RouterOutlet, GreetComponent],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.css'
-  })
+  selector: 'app-root',
+  standalone: true,
+  imports: [GreetComponent, RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
   export class AppComponent {}
