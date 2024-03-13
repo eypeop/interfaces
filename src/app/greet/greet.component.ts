@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-greet',
   standalone: true,
+  imports: [],
   templateUrl: './greet.component.html',
-  styleUrls: ['./greet.component.css']
+  styleUrl: './greet.component.css'
 })
 export class GreetComponent implements OnInit {
 
