@@ -8,6 +8,7 @@ import { GreetComponent } from './greet/greet.component';
     selector: "my-app",
     standalone: true,
     imports: [ RouterOutlet, GreetComponent],
-    template:'./app.component',
-})
-export class AppComponent {}
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
+  })
+  export class AppComponent {}
